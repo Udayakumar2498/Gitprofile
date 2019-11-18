@@ -35,7 +35,7 @@ load = false;
     }
      else {
     console.log(this.name);
-    this.http.get('https://api.github.com/users/' + this.name + '?access_token=4f0522ca96cd66f42d225470285924584e50e77c')
+    this.http.get('https://api.github.com/users/' + this.name)
     .subscribe(response => {
      this.userdetail = response;
      console.log(this.userdetail);
